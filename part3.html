@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment11_part3</title>
+    <link rel="stylesheet" href="styles_part3.css">
+</head>
+<body>
+    <div id="usernameGreeting">
+        <img src="https://cdn-icons-png.flaticon.com/512/4139/4139981.png" alt="User Icon" class="user-icon">
+        <h1>Welcome, {{username || 'Guest'}}!</h1>
+        <input type="text" v-model="username" placeholder="Enter your name">
+        <button @click="setDefaultUsername">Set Default</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="script_part3.js"></script>
+</body>
+</html>
