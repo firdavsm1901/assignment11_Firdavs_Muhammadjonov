@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment11_Part5</title>
+  <link rel="stylesheet" href="styles_part5.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="taskTodo">
+        <img src="https://cdn-icons-png.flaticon.com/512/6783/6783643.png" alt="Task Icon" class="task-icon">
+        <h1>Task List</h1>
+        
+        <input type="text" v-model="newTask" @keyup.enter="addTask" placeholder="Add new task...">
+        
+        <ul>
+          <li v-for="(task, index) in tasks" :key="index">
+            <input type="checkbox" v-model="task.completed">
+            <span :class="{ 'completedTask': task.completed }">
+              {{ task.title }}
+            </span>
+            <button @click="deleteTask(index)">Delete</button>
+          </li>
+        </ul>
+      </div>
+      
+      <script src="script_part5.js"></script>
+    
+</body>
+</html>
