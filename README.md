@@ -28,8 +28,6 @@ To run this project:
 - The Vue.js script binds the `imageSource` variable to the image source.
 - It further binds the `message` variable to a greeting displayed as an `<h1>` tag.
 
-## Additional Notes
-This part of the assignment serves as a demonstration of basic Vue.js integration within an HTML file. The image and greeting message are dynamically presented using Vue.js data binding.
 
 # Assignment11_Part2
 
@@ -62,6 +60,37 @@ To view the list rendering functionality:
 - Users can add new fruits to the list by entering text in the input field and clicking the "Add" button.
 - Clicking on a fruit in the list removes it dynamically.
 
-## Additional Notes
-This part of the assignment showcases the dynamic rendering of a list of fruits using Vue.js. Users can add new fruits and remove existing ones with simple interactions.
+
+# Assignment11_part3
+
+## Project Overview
+This project is part of an assignment focusing on Vue.js. It consists of an HTML file demonstrating a basic username greeting functionality using Vue.js.
+
+## Files Included
+
+### HTML File
+- `index.html`: This file serves as the main HTML structure incorporating Vue.js for the username greeting feature.
+- `styles_part3.css`: External CSS file for styling the username greeting elements.
+- `script_part3.js`: JavaScript file containing Vue.js code to manage the username greeting functionality.
+
+### Vue.js Integration
+This assignment utilizes Vue.js (version 2.6.14) through a CDN link to showcase dynamic username greeting functionality.
+
+## Project Structure
+- `index.html`: Entry point of the project.
+- `styles_part3.css`: Stylesheet file defining visual attributes for the username greeting elements.
+- `script_part3.js`: JavaScript file responsible for Vue.js functionality in managing the username greeting feature.
+
+## Usage
+To experience the username greeting functionality:
+1. Clone the repository.
+2. Open `index.html` in a modern web browser.
+
+## Functionality
+- The page displays a user icon and a greeting message.
+- Vue.js binds the `username` variable to the input field value and greeting message.
+- Users can enter their name in the input field to personalize the greeting.
+- Clicking the "Set Default" button sets the default greeting to "Guest" if no username is entered.
+
+
 
