@@ -92,5 +92,39 @@ To experience the username greeting functionality:
 - Users can enter their name in the input field to personalize the greeting.
 - Clicking the "Set Default" button sets the default greeting to "Guest" if no username is entered.
 
+# Assignment11_part4
+
+## Project Overview
+This project comprises an HTML file implementing a user registration form using Vue.js. It allows users to register by providing a username, email, and password.
+
+## Files Included
+
+### HTML File
+- `index.html`: Main HTML structure incorporating Vue.js for the user registration form.
+- `styles_part4.css`: External CSS file for styling the form elements.
+- `script_part4.js`: JavaScript file containing Vue.js code to manage the user registration form functionality.
+
+### Vue.js Integration
+This assignment utilizes Vue.js (version 2.6.14) through a CDN link to handle form validation and registration functionality.
+
+## Project Structure
+- `index.html`: Entry point of the project.
+- `styles_part4.css`: Stylesheet file defining visual attributes for the form elements.
+- `script_part4.js`: JavaScript file responsible for Vue.js functionality in managing the user registration form.
+
+## Usage
+To use the user registration form:
+1. Clone the repository.
+2. Open `index.html` in a modern web browser.
+
+## Functionality
+- The form allows users to enter a username, email, and password.
+- Vue.js is used to validate the form inputs:
+  - Username is required.
+  - Email must be a valid email format.
+  - Password must be at least 6 characters.
+- The "Register" button is disabled until all fields are valid.
+- Upon successful form submission, registration logic can be implemented (not explicitly defined in the provided code).
+
 
 
