@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="styles_part4.css">
+</head>
+<body>
+    <div id="app">
+        <img src="https://cdn-icons-png.flaticon.com/512/4139/4139981.png" alt="User Image" class="user-image">
+        <form @submit.prevent="attemptSubmit">
+            <label for="username">Username:</label>
+            <input type="text" v-model="username" id="username" placeholder="Username">
+            <p class="error-message" v-if="!usernameValid">Username is required.</p>
+
+            <label for="email">Email:</label>
+            <input type="email" v-model="email" id="email" placeholder="Email">
+            <p class="error-message" v-if="!emailValid">Please enter a valid email address.</p>
+
+            <label for="password">Password:</label>
+            <input type="password" v-model="password" id="password" placeholder="Password">
+            <p class="error-message" v-if="!passwordValid">Password should be at least 6 characters.</p>
+
+            <button :disabled="!formValid">Register</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="script_part4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
